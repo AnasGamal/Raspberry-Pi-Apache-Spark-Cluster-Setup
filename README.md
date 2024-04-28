@@ -4,7 +4,7 @@ This guide assists students of the Operating Systems (CSCI 301) class at Stetson
 
 ## Initial Setup
 
-1. SSH into your master Raspberry Pi. Remember, SSH keys should be configured for password-less login as described earlier.
+1. SSH into your master Raspberry Pi.
 2. Update the system and install Java. **Make sure** to apply these steps on each worker node.
 
 ```bash
@@ -57,7 +57,7 @@ Replace `[MASTER_IP_ADDRESS]` with your master Raspberry Pi's IP address.
 ```
 Replace each `[WORKER_IP_X]` with the respective IP addresses.
 
-6. Distribute the configuration files to all worker nodes by running the following command:
+6. Distribute the configuration files to all worker nodes by running the following command. **Remember, SSH keys should be configured for password-less login as described in the intro for seamless execution.**:
 
 ```bash
 for i in `cat /opt/spark/conf/workers`
